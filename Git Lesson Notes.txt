@@ -1,0 +1,48 @@
+echo "# Python" >> README.md
+git init                                                        # initialize an empty repository
+git add README.md                                               # Add a file to be queued
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Xorbee/Python.git
+git push -u origin main
+
+git remote add origin https://github.com/Xorbee/Python.git
+git branch -M main
+git push -u origin main
+
+
+git status                                                      # Check where you are and what is updated
+git log                                                         # Check what has happened recently in your repository
+
+git show HEAD                                                   # Show the head commit or the commit you are currently on
+git checkout HEAD filename                                      # Restore the working directory to the last commit (Changes the saved files to what is in the staging area)
+git checkout -- filename                                        # Exact same as line above
+git diff                                                        # Shows the differences between last commit and current state?
+git reset HEAD filename                                         # Remove a file from the current commit *Un-add it (Removes from staging area), sets the staging area to be at the last commit
+git reset 1234567 filename                                      # Reset to a previous commit, it is unclear what this is doing, but it looks like it is resetting the HEAD such that you can then checkout the file you want to be unchanged
+
+git add .                                                       # Adds all the files to the staging area
+
+git stash                                                       # Stash your current changes in a hidden folder so you can have a clean commit to go to another branch or commit old changes yu forgot to commit
+git stash pop                                                   # Restore the changes that you stashed
+https://youtu.be/7gL3Safgahk
+
+git commit --amend                                              # Amend a commit without creating an entirely new commit
+
+For Windows:
+Use the git bash application
+
+Commit Comments:
+Must be in quotation marks
+Written in the present tense
+Should be brief (50 characters or less) when using -m
+
+git config --global user.name "Adam Surface"                                    # Set the local user name
+git config --global user.email "adam.jackson2835@gmail.com"              # git email address
+
+you can make a local repository with everything we have done, but you need to push it to github in order to have it on the cloud
+git init
+git add .
+git commit -m "Comment"
+git push
+
